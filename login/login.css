@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Crimson+Text&family=Odibee+Sans&display=swap");
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greyish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --black: #171717;
+  --white: #fffdfa;
+  --red: #f11e2c;
+  --font-karla: "Karla", sans-serif;
+  --font-neue: "Bebas Neue", cursive;
+  --font-odibee: "Odibee Sans", cursive;
+}
+body {
+  font-size: 16px;
+  word-spacing: 1px;
+  background-color: rgb(242, 245, 247);
+  color: #4d5068;
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.content-body {
+  min-height: 100vh;
+  font-family: var(--font-karla);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-wrapper {
+  width: 350px;
+  margin: 0 auto;
+}
+.bg-white {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #e5e7ec;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.bg-register {
+  width: 100%;
+  background-color: #f8fafc;
+  border: 2px solid #e5e7ec;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.text-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.field-group {
+  border: 0;
+  padding: 0.35em 0 0.625em 0;
+  text-align: left;
+  position: relative;
+}
+
+.label {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.input {
+  padding: 0.5em 0 0.5em 1em;
+  width: 100%;
+  border: 1px solid #e5e7ec;
+  border-radius: 5px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  background-color: #f11e2c;
+  color: #fff;
+  padding: 0.7em;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: ease-out 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: rgba(255, 0, 0, 0.752);
+}
+
+.link-register {
+  background-color: #fff;
+  display: flex;
+  padding: 0.7em;
+  justify-content: center;
+  text-decoration: none;
+  color: #4d5068;
+  border: 1px solid #e5e7ec;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+.link-register:hover {
+  color: #171717;
+  background-color: whitesmoke;
+}
+i {
+  float: right;
+  cursor: pointer;
+  margin-right: 25px;
+}
+#hide {
+  display: none;
+}

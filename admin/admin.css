@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Crimson+Text&family=Odibee+Sans&display=swap");
+@import url(../style.css);
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --greyish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --black: #171717;
+  --white: #fffdfa;
+  --red: #f11e2c;
+  --font-karla: "Karla", sans-serif;
+  --font-neue: "Bebas Neue", cursive;
+  --font-odibee: "Odibee Sans", cursive;
+}
+
+body {
+  color: var(--dark-violet);
+  font-family: var(--font-karla);
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-neue);
+}
+
+h1,
+h2 {
+  font-size: 4em;
+  position: relative;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0;
+  padding-top: 50px;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.input {
+  position: absolute;
+  bottom: 15px;
+  right: 22px;
+}

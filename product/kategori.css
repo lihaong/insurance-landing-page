@@ -54,8 +54,9 @@ p {
   content: "";
   background-color: var(--black);
   position: absolute;
-  top: 0;
-  left: 0;
+  transform: translateX(-50%);
+  top: 10px;
+  left: 100px;
   height: 1px;
   width: 200px;
 }
@@ -109,6 +110,7 @@ nav {
   left: 0;
   width: 100vw;
   z-index: 100;
+  margin-bottom: 100px;
 }
 nav .img-wrapper {
   max-width: 100px;
@@ -140,42 +142,14 @@ nav li a {
   text-decoration: none;
 }
 
-/* Header styling */
-header {
-  background-image: url(images/main.png);
-  background-repeat: no-repeat;
-  background-size: 1640px;
-  height: 650px;
-  color: var(--black);
-  padding: 60px 0px;
-  position: relative;
-  margin-top: 80px;
-  margin-bottom: 3px;
-}
-header .motto {
-  max-width: 300px;
-}
-header * {
-  z-index: 1;
-}
 
-header::before {
-  content: "";
-  background-image: url("/images/bg-pattern-intro-left-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  position: absolute;
-  bottom: -50%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-}
 /* Section styling */
 section .container {
   background-color: var(--very-dark-violet);
 }
-
+section h2 {
+  margin-top: 100px;
+}
 .card {
   width: 350px;
   height: 680px;
@@ -215,35 +189,11 @@ section .container {
   height: 250px;
   max-width: 250px;
 }
-.bg-violet {
-  background-color: #171717;
-  background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 50% 100%;
-  padding: 70px;
-  margin: 100px auto;
-}
-
-.bg-violet h2 {
-  color: #fff;
-  font-size: 3em;
-  padding: 0;
-  width: 60%;
-}
-.bg-violet .btn {
-  background-color: var(--white);
-  color: var(--very-dark-violet);
-}
-.bg-violet .btn:hover {
-  background-color: var(--red);
-  color: var(--white);
-}
 
 /* Footer styling */
 footer {
   background-color: var(--very-light-gray);
-  background-image: url("./images/bg-pattern-footer-desktop.svg");
+  background-image: url("/images/bg-pattern-footer-desktop.svg");
   background-repeat: no-repeat;
   background-position: top left;
   padding: 60px 0 30px;
@@ -255,6 +205,7 @@ footer h4 {
 }
 
 footer ul {
+  margin-left: 30px;
   padding: 0;
   list-style-type: none;
 }
@@ -359,10 +310,10 @@ footer li a {
   header::after {
     display: none;
   }
-  
+
   .line-top::before {
     left: 50%;
-    transform: translateX(-50%);
+    transform:translateX(-50%)
   }
 
   .reverse-mobile {

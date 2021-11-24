@@ -79,6 +79,13 @@ if (isset($_POST["input"])) {
         <div class="field-group">
           <input class="btn-submit" type="submit" name="input" value="Input Data" />
         </div>
+
+        <div class="field-group">
+          <a class="btn-submit" href="product.php">
+            Cancel
+          </a>
+          <input type="submit" name="input" value="Input Data" />
+        </div>
       </form>
     </div>
   </div>

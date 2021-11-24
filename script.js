@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function hamburger(){
 	const hamburger = document.getElementById('hamburger');
 	const menu = document.getElementById('menu');
@@ -53,3 +54,12 @@ function optionSelect(){
 	});
 
 }
+=======
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('show');
+	menu.classList.toggle('show');
+});
+>>>>>>> 3a98146f8f5bbd65401847e72346a7f4e295e060
